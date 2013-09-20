@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elastic Beanstalk with RDS</title>
+    <link href="{{ url_for('static', filename="css/style.css") }}" rel="stylesheet">
+  </head>
+  <body>
+<h1>Database Test...</h1>
+{% if nickname %}
+<p>Success! the first user in your db is: <strong>{{ nickname }}</strong></p>
+{% else %}
+<p>Fail! Did you add any Users to the database?</p>
+{% endif %}
+  </body>
+</html>
