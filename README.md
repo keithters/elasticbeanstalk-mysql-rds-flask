@@ -17,7 +17,7 @@ Download and install the command line tools http://aws.amazon.com/code/675270941
 ####Back in Terminal set up eb tools and create an eb app:
 If you need to find your security creds, look here: http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html
     
-    $ export PATH=$PATH:\<path to unzipped EB CLI package\>/eb/macosx/python2.7/  
+    $ export PATH=$PATH:<path to unzipped EB CLI package>/eb/macosx/python2.7/  
 *(if not on macosx, change this path appropriate to your platform)*
     
     $ eb init
