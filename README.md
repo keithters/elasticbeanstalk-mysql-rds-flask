@@ -61,6 +61,7 @@ Edit __config.py__:
     $ git aws.push
     $ eb status --verbose
 
+If `git aws.push` doesn't work, see [this stackoverflow post](http://stackoverflow.com/questions/13574143/git-aws-push-command-not-created-by-eb-init) for a tip for non-bash shells.
 
 ###Make sure everything worked and it's running:
 * Go to https://console.aws.amazon.com/console/
