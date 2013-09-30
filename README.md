@@ -6,6 +6,7 @@ Follow the instructions below to get up and running.
 
 ####From Terminal:
     $ git clone <this repo>
+    $ cd elasticbeanstalk-mysql-rds-flask
     $ python virtualenv.py flask
     $ flask/bin/pip install -r requirements.txt
 
@@ -22,13 +23,16 @@ If you need to find your security creds, look here: http://docs.aws.amazon.com/g
     
     $ eb init
     (Answer the questions)
+    Enter an AWS Elastic Beanstalk environment name (current value is ""): *(NOTE: this must be <= 23 chars & can't end in a hyphen)*
+    Select a solution stack (current value is "32bit Amazon Linux running Python").
     Create RDS instance? [y/n]: y
+    Attach an instance profile (current value is "aws-elasticbeanstalk-ec2-role"):
     $ eb start
 
 
 ####In a browser give your machine security clearance:
 * Log in to your AWS account and go to https://console.aws.amazon.com/rds/home
-* Click "Security Groups" -> "Create DB Secutity Group" *(if you don'e see security groups in the left nav, make sure the correct region is selected in the top right)*
+* Click "Security Groups" -> "Create DB Secutity Group" *(if you don't see security groups in the left nav, make sure the correct region is selected in the top right)*
 * Add the CDIR of your current machine *(if you are behind a firewall you may need to find your external CDIR)*
 * Click 'Instances'
 * To add your new security group, edit your RDS instance: "Instance Actions" -> "Modify" and select all the necessary groups
