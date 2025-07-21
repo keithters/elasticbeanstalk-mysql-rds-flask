@@ -1,6 +1,8 @@
 elasticbeanstalk-mysql-rds-flask
 ================================
 
+**NOTE: This is old, and there are better ways do deploy things like this now.**
+
 A Simple Flask (python) base application using Amazon Elastic Beanstalk with an Amazon MySQL RDS.  
 Follow the instructions below to get up and running.
 
